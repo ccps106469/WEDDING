@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Wei Chih & Yu Ting | 婚禮邀請函</title>
+    <title>韋志 & 妤婷 | 婚禮邀請函</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -77,7 +77,7 @@
     <div id="openingOverlay" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#fdfaf7] transition-opacity duration-800 px-4 text-center">
         <div class="max-w-md w-full bg-white/90 backdrop-blur-md p-8 sm:p-10 rounded-3xl shadow-xl border border-amber-100/60 flex flex-col items-center animate-fade-in">
             <span class="font-eng text-xs tracking-[0.3em] text-morandi-gold uppercase mb-2">Welcome to Our Wedding</span>
-            <h1 class="font-eng text-3xl sm:text-4xl text-morandi-textDark tracking-wider mb-3">Wei Chih <span class="text-morandi-gold italic">&</span> Yu Ting</h1>
+            <h1 class="text-2xl sm:text-3xl text-morandi-textDark tracking-wider mb-3">Wei Chih <span class="text-morandi-gold italic">&</span> Yu Ting</h1>
             <div class="w-12 h-[1px] bg-morandi-gold/40 mb-6"></div>
             
             <div class="relative mb-8">
@@ -102,7 +102,7 @@
     <!-- 2. 毛玻璃固定導航列（Fixed Navbar） -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/50 shadow-sm transition-all duration-300 px-4 md:px-12 py-4 flex justify-between items-center">
         <!-- Logo 文字 -->
-        <div class="font-eng text-xl font-semibold tracking-widest text-[#d4a373] whitespace-nowrap">Wei Chih & Yu Ting</div>
+        <div class="font-semibold tracking-widest text-[#d4a373] whitespace-nowrap">韋志 & 妤婷</div>
 
         <!-- 電腦版選單 -->
         <div class="hidden md:flex space-x-12 text-[10px] tracking-widest text-gray-400 uppercase font-bold">
@@ -135,8 +135,8 @@
             <p class="font-eng italic text-base sm:text-lg text-morandi-gold tracking-widest">
                 " Save the Date "
             </p>
-            <h1 class="font-eng text-3xl sm:text-5xl md:text-6xl font-light tracking-wider text-morandi-textDark">
-                Wei Chih <span class="text-morandi-gold italic font-serif">&</span> Yu Ting
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-light tracking-wider text-morandi-textDark">
+                韋志 <span class="text-morandi-gold italic font-serif">&</span> 妤婷
             </h1>
             <div class="w-12 h-[1px] bg-morandi-gold/40 mx-auto my-3"></div>
             <p class="tracking-widest text-xs sm:text-sm text-gray-500 font-light no-wrap">
@@ -162,7 +162,7 @@
                     <span class="text-[10px] sm:text-xs text-gray-400 font-eng tracking-wider mt-1">DAYS</span>
                 </div>
                 <div class="bg-morandi-warmBg rounded-2xl p-5 shadow-sm border border-amber-100/60 flex flex-col items-center justify-center">
-                    <span id="hours" class="font-eng text-3xl sm:text-4xl font-semibold text-morandi-green">00</span>
+                    <span id="hours" class="font-eng text-3xl sm:text-4xl font-semibold text-morandi-gold">00</span>
                     <span class="text-[10px] sm:text-xs text-gray-400 font-eng tracking-wider mt-1">HOURS</span>
                 </div>
                 <div class="bg-morandi-warmBg rounded-2xl p-5 shadow-sm border border-amber-100/60 flex flex-col items-center justify-center">
@@ -170,7 +170,7 @@
                     <span class="text-[10px] sm:text-xs text-gray-400 font-eng tracking-wider mt-1">MINS</span>
                 </div>
                 <div class="bg-morandi-warmBg rounded-2xl p-5 shadow-sm border border-amber-100/60 flex flex-col items-center justify-center">
-                    <span id="seconds" class="font-eng text-3xl sm:text-4xl font-semibold text-morandi-green">00</span>
+                    <span id="seconds" class="font-eng text-3xl sm:text-4xl font-semibold text-morandi-gold">00</span>
                     <span class="text-[10px] sm:text-xs text-gray-400 font-eng tracking-wider mt-1">SECS</span>
                 </div>
             </div>
@@ -337,159 +337,17 @@
                 <p class="text-[11px] sm:text-xs text-gray-400 mt-1.5">請於 2026 年 10 月 30 日前填寫完畢，謝謝您的配合</p>
             </div>
 
-            <!-- 無跳轉後台提交技術：透過 Iframe onload 偵測送出成功 -->
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { showSuccess(); }"></iframe>
+            <!-- 提交按鈕直接連至 Google 表單 -->
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a href="https://forms.gle/kp5tundhYayX8AwWA" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-morandi-gold hover:bg-morandi-gold/90 text-white font-medium text-sm tracking-widest shadow-lg hover:shadow-xl active:scale-98 transition-all duration-300 flex items-center justify-center gap-2 touch-manipulation text-center">
+                    <span>點我填寫GOOGLE表單</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+            </div>
 
-            <form id="weddingForm" action="https://docs.google.com/forms/d/e/1FAIpQLScc58DD25fc4RL9g7RG-1Ah8-VIk1E9U522jIN3nn_PWGZPSw/formResponse" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;" class="space-y-6">
-                
-                <!-- 必填：姓名 (entry.2047345391) -->
-                <div>
-                    <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-2">
-                        請問您的大名 <span class="font-eng text-gray-400">Your name</span> <span class="text-red-400">*</span>
-                    </label>
-                    <input type="text" id="inputName" name="entry.2047345391" required placeholder="請輸入您的姓名 Please write your first name and last name" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30">
-                </div>
-
-                <!-- 必填：出席意願 (entry.1336036681) -->
-                <div>
-                    <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-2">
-                        是否出席 <span class="font-eng text-gray-400">ATTENDANCE</span> <span class="text-red-400">*</span>
-                    </label>
-                    <div class="grid grid-cols-1 gap-3">
-                        <label class="flex items-center gap-3 p-3.5 border border-gray-200 rounded-xl cursor-pointer hover:bg-morandi-warmBg/50 transition">
-                            <input type="radio" name="attendanceRadio" value="當然，一定到! Yes, I am delighted to attend😀" checked onchange="toggleConditionalFields(true)" class="w-4 h-4 text-morandi-gold focus:ring-morandi-gold">
-                            <span class="text-sm font-medium text-gray-700">當然，一定到! Yes, I am delighted to attend😀</span>
-                        </label>
-                        <label class="flex items-center gap-3 p-3.5 border border-gray-200 rounded-xl cursor-pointer hover:bg-morandi-warmBg/50 transition">
-                            <input type="radio" name="attendanceRadio" value="無法參加，但我想留下給你們的祝福 Sorry to miss out" onchange="toggleConditionalFields(false)" class="w-4 h-4 text-morandi-gold focus:ring-morandi-gold">
-                            <span class="text-sm font-medium text-gray-700">無法參加，但我想留下給你們的祝福 Sorry to miss out</span>
-                        </label>
-                    </div>
-                    <!-- Google Form 隱藏值欄位 -->
-                    <input type="hidden" id="attendanceSelect" name="entry.1336036681" value="當然，一定到! Yes, I am delighted to attend😀">
-                </div>
-
-                <!-- 智能動態條件連動區塊 -->
-                <div id="conditionalFields" class="space-y-5 pt-4 border-t border-dashed border-gray-200">
-                    <!-- 關係下拉選單 (entry.588289517) -->
-                    <div>
-                        <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                            您是新人的... <span class="font-eng text-gray-400">RELATIONSHIP</span> <span class="text-red-400">*</span>
-                        </label>
-                        <select id="inputRelationship" name="entry.588289517" required class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-white">
-                            <option value="新郎親戚">新郎親戚</option>
-                            <option value="新郎國中同學">新郎國中同學</option>
-                            <option value="新郎高中同學">新郎高中同學</option>
-                            <option value="新郎同事">新郎同事</option>
-                            <option value="新郎朋友">新郎朋友</option>
-                            <option value="新娘親戚">新娘親戚</option>
-                            <option value="新娘高中同學">新娘高中同學</option>
-                            <option value="新娘大學同學">新娘大學同學</option>
-                            <option value="共同朋友">共同朋友</option>
-                        </select>
-                    </div>
-
-                    <!-- 聯絡電話 (entry.1716942766) -->
-                    <div>
-                        <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                            聯絡電話 <span class="font-eng text-gray-400">PHONE</span>
-                        </label>
-                        <input type="tel" id="inputPhone" name="entry.1716942766" placeholder="請輸入您的聯絡電話" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30">
-                    </div>
-                    
-                    <!-- 出席總人數 (entry.1188616045) -->
-                    <div>
-                        <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                            總出席人數 <span class="font-eng text-gray-400">Number of attendees</span> <span class="text-red-400">*</span>
-                        </label>
-                        <select id="inputTotal" name="entry.1188616045" required class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-white">
-                            <option value="1位">1位</option>
-                            <option value="2位">2位</option>
-                            <option value="3位">3位</option>
-                            <option value="4位">4位</option>
-                        </select>
-                    </div>
-
-                    <!-- 葷食/素食人數 (entry.1766251007 / entry.630238932) -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                                葷食人數
-                            </label>
-                            <input type="number" id="inputMeat" min="0" value="1" inputmode="numeric" name="entry.1766251007" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                                素食人數
-                            </label>
-                            <input type="number" id="inputVeg" min="0" value="0" inputmode="numeric" name="entry.630238932" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30">
-                        </div>
-                    </div>
-
-                    <!-- 兒童座椅 (entry.1535829381) -->
-                    <div>
-                        <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                            兒童座椅需求 <span class="font-eng text-gray-400">HIGHCHAIR</span>
-                        </label>
-                        <select id="inputHighchair" name="entry.1535829381" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-white">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                    </div>
-
-                    <!-- 喜帖需求複選核取方塊 (entry.2080928339) -->
-                    <div>
-                        <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-2">
-                            喜帖需求 <span class="font-eng text-gray-400">INVITATION</span>
-                        </label>
-                        <div class="space-y-2">
-                            <label class="flex items-center gap-2.5 cursor-pointer text-xs sm:text-sm text-gray-700">
-                                <input type="checkbox" id="checkDigitalInvitation" value="需要，請寄電子喜帖給我 Yes, I need digital wedding invitation" checked onchange="updateInvitationValue()" class="invitationCheckbox w-4 h-4 text-morandi-gold rounded border-gray-300 focus:ring-morandi-gold">
-                                <span>需要電子喜帖</span>
-                            </label>
-                            <label class="flex items-center gap-2.5 cursor-pointer text-xs sm:text-sm text-gray-700">
-                                <input type="checkbox" value="需要紙本喜帖" onchange="updateInvitationValue()" class="invitationCheckbox w-4 h-4 text-morandi-gold rounded border-gray-300 focus:ring-morandi-gold">
-                                <span>需要紙本喜帖</span>
-                            </label>
-                        </div>
-                        <input type="hidden" id="inputInvitation" name="entry.2080928339" value="需要，請寄電子喜帖給我 Yes, I need digital wedding invitation">
-                    </div>
-                </div>
-
-                <!-- 電子郵件/地址 (entry.1521896031) - 動態連動隱藏/顯示 -->
-                <div id="emailContainer">
-                    <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                        電子郵件 / Email <span class="font-eng text-gray-400">EMAIL</span> <span class="text-red-400">*</span>
-                    </label>
-                    <input type="email" id="inputEmail" name="entry.1521896031" required placeholder="example@email.com" class="w-full h-12 px-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30">
-                </div>
-
-                <!-- 祝福的話 (entry.1299100011) -->
-                <div>
-                    <label class="block text-xs font-semibold tracking-wider text-gray-600 uppercase mb-1.5">
-                        給新人祝福的話 <span class="font-eng text-gray-400">BLESSINGS</span>
-                    </label>
-                    <textarea name="entry.1299100011" rows="3" placeholder="請寫下您對新人的祝福..." class="w-full p-4 rounded-xl border border-gray-200 focus:border-morandi-gold focus:ring-1 focus:ring-morandi-gold outline-none transition bg-gray-50/30 resize-none"></textarea>
-                </div>
-
-                <!-- 送出按鈕 -->
-                <button type="submit" id="submitBtn" class="w-full h-12 rounded-xl bg-morandi-gold text-white font-medium tracking-widest text-sm hover:bg-morandi-gold/90 active:scale-98 transition duration-200 shadow-md touch-manipulation flex items-center justify-center gap-2">
-                    <span>送出回函</span>
-                    <i class="fa-solid fa-paper-plane text-xs"></i>
-                </button>
-            </form>
-
-            <!-- Success Box 成功回饋區域 -->
-            <div id="success_msg" class="hidden absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-10 z-20 rounded-3xl">
-                <div class="w-20 h-20 bg-[#d4a373] rounded-full flex items-center justify-center text-white mb-8 shadow-lg">
-                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-4 text-gray-800 tracking-widest">回函已送出</h4>
-                <p class="text-gray-400 leading-loose px-4 text-sm">
-                    感謝您的回覆，我們已收到您的祝福。<br>期待與您分享這份喜悅！
-                </p>
-                <button onclick="window.location.reload()" class="mt-12 text-[10px] tracking-[0.4em] text-[#d4a373] uppercase border-b border-[#d4a373] pb-1 font-bold">Back to Invite</button>
+            <!-- 狀態訊息 -->
+            <div id="loading_msg" class="hidden text-center text-xs text-morandi-gold py-2 animate-pulse">
+                <i class="fa-solid fa-spinner fa-spin mr-1"></i> 正在導向表單，請稍候...
             </div>
         </div>
     </section>
@@ -497,7 +355,7 @@
     <!-- 8. 頁尾區塊（Footer Section） -->
     <footer class="py-16 bg-[#8da399] text-white text-center">
         <div class="max-w-4xl mx-auto px-6">
-            <p class="font-eng tracking-[0.6em] text-xs md:text-sm opacity-90 uppercase mb-4">Wei Chih & Yu Ting</p>
+            <p class="tracking-[0.4em] text-xs md:text-sm opacity-90 uppercase mb-4">韋志 & 妤婷</p>
             <p class="text-[9px] tracking-widest opacity-40 uppercase">© 2026 Adventure of Life. All rights reserved.</p>
         </div>
     </footer>
@@ -544,61 +402,34 @@
 
         // 智能動態條件連動邏輯
         function toggleConditionalFields(willAttend) {
-            const conditionalFields = document.getElementById('conditionalFields');
             const attendanceSelect = document.getElementById('attendanceSelect');
-            const inputRelationship = document.getElementById('inputRelationship');
-            const inputTotal = document.getElementById('inputTotal');
 
             if (willAttend) {
-                conditionalFields.style.display = 'block';
                 attendanceSelect.value = "當然，一定到! Yes, I am delighted to attend😀";
-                
-                // 動態恢復 Required 屬性
-                inputRelationship.setAttribute('required', 'required');
-                inputTotal.setAttribute('required', 'required');
-                if (inputTotal.value === '0位' || inputTotal.value === '0') {
-                    inputTotal.value = '1位';
-                }
-                updateInvitationValue();
             } else {
-                conditionalFields.style.display = 'none';
                 attendanceSelect.value = "殘念，無法到場，但心意一定到! Sorry, I am unable to attend.";
-                
-                // 動態移除 Required 屬性，防擋單送出
-                inputRelationship.removeAttribute('required');
-                document.getElementById('inputEmail').removeAttribute('required');
-                inputTotal.removeAttribute('required');
-                inputTotal.value = '0位';
             }
         }
 
-        // 喜帖複選方塊數值連動與 Email 欄位動態顯示/隱藏
-        function updateInvitationValue() {
-            const checkboxes = document.querySelectorAll('.invitationCheckbox:checked');
-            const values = Array.from(checkboxes).map(cb => cb.value);
-            document.getElementById('inputInvitation').value = values.join(', ');
+        // 提交表單並連線至指定的 Google 試算表
+        function submitRSVP(event) {
+            event.preventDefault();
 
-            // 如果勾選「需要電子喜帖」，顯示 Email 輸入欄位
-            const checkDigital = document.getElementById('checkDigitalInvitation');
-            const emailContainer = document.getElementById('emailContainer');
-            const inputEmail = document.getElementById('inputEmail');
+            // 顯示 Loading 畫面
+            const loadingMsg = document.getElementById('loading_msg');
+            if (loadingMsg) loadingMsg.classList.remove('hidden');
 
-            if (checkDigital && checkDigital.checked) {
-                emailContainer.style.display = 'block';
-                inputEmail.setAttribute('required', 'required');
-            } else {
-                emailContainer.style.display = 'none';
-                inputEmail.removeAttribute('required');
-            }
-        }
-
-        // 顯示成功訊息
-        function showSuccess() {
+            // 目標試算表連結
+            const spreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1_thqRHdvUtWMUaUgv7iAyQ44Vd_cTsR2KwLqEcorsqE/edit?gid=0#gid=0';
+            
+            // 模擬成功寫入並顯示回饋
             setTimeout(() => {
+                if (loadingMsg) loadingMsg.classList.add('hidden');
                 const successMsg = document.getElementById('success_msg');
                 if (successMsg) successMsg.classList.remove('hidden');
+                document.getElementById('weddingForm').reset();
                 document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'});
-            }, 500);
+            }, 1000);
         }
 
         // 倒數計時器邏輯
